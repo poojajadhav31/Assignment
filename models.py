@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 from django.db import models
 
-class User(models.Model):
+class Product(models.Model):
     name = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
+    price = models.FloatField()
 
     class Meta:
-        app_label = 'users_app'
+        app_label = 'products_app'
